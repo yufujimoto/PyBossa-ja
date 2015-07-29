@@ -1,4 +1,4 @@
-# How to apply Japanese translation file to PyBossa
+# How to apply Japanese User Interfaces 
 
 1. Replace some files located in "~/pybossa/pybossa/themes/default/templates" with following files.
 
