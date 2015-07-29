@@ -9,7 +9,7 @@
     + projects/delete.html
     + projects/index.html
     + projects/task_import_options.html
-    + tasks_browse.html
+    + projects/tasks_browse.html
 
 2. Create a symlink to the translation directory to enable translation file. 
 
