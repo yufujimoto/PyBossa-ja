@@ -15,14 +15,14 @@
 
 4. Open /pybossa/default_settings.py and a new language settings in LOCALES as below:
     
-        LOCALES = ['en', 'es', 'it', 'fr', 'ja']
+        LOCALES = ['en', 'es', 'it', 'fr', '**ja**']
 
 
 5. Rewrite the default user settings in /pybossa/model/user.py as bebelow:
     
         locale = Column(Unicode(length=254), default=u'ja', nullable=False)
 
-6. Replace *messages.pot* file located in "~/pybossa/pybossa/translations/".
+6. Replace **messages.pot** file located in "~/pybossa/pybossa/translations/".
 
 7. Restart PyBossa.
     
