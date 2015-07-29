@@ -1,5 +1,7 @@
 # How to add Japanese menu to PyBossa 
 
+[PyBossa](http://pybossa.com/) is an open source platform for crowd-sourcing, and this repository provides a set of Japanese translation files. Please see [PyBossa's documentation](http://docs.pybossa.com/en/latest/install.html) if you haven't **installed by hand**. 
+
 1. Replace some files located in "~/pybossa/pybossa/themes/default/templates" with following files.
 
     + account/update.html
@@ -35,7 +37,11 @@
 
     You can edit/modify the **messages.pot** file if you need.
 
-8. Restart PyBossa.
+8. Activate virtualenv if you need.
+
+        source env/bin/activate
+
+9. Restart PyBossa.
     
         cd ~/pybossa/pybossa  
         pybabel extract . -F babel.cfg -k lazy_gettext -o translations/messages.pot
