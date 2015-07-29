@@ -1,4 +1,4 @@
-# How to apply Japanese User Interfaces 
+# How to add Japanese menu to PyBossa 
 
 1. Replace some files located in "~/pybossa/pybossa/themes/default/templates" with following files.
 
