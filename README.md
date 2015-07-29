@@ -6,12 +6,11 @@
 
 2. Initialyze the translation directory under "~/pybossa/pybossa/translations/".  
     
-    pybabel init -i messages.pot -d translations -l ja
+        pybabel init -i messages.pot -d translations -l ja
 
 3. Open "~/pybossa/pybossa/forms/forms.py" and add a new language settings around line 305.
     
         if locale == 'ja':
-
             lang = gettext("Japanese")
 
 4. Open /pybossa/default_settings.py and a new language settings in LOCALES as below:
@@ -23,7 +22,7 @@
     
         locale = Column(Unicode(length=254), default=u'ja', nullable=False)
 
-6. Replace "messages.pot" file located in "~/pybossa/pybossa/translations/".
+6. Replace *messages.pot* file located in "~/pybossa/pybossa/translations/".
 
 7. Restart PyBossa.
     
