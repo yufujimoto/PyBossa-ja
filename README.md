@@ -1,8 +1,9 @@
 # How to apply Japanese translation file to PyBossa
 
 1. Create a symlink to the translation directory to enable translation file. 
-    
-    cd ~/pybossa/pybossa && ln -s themes/defaul/translations
+    The code is below:
+
+        cd ~/pybossa/pybossa && ln -s themes/defaul/translations
 
 2. Initialyze the translation directory under "~/pybossa/pybossa/translations/".  
     
@@ -10,9 +11,9 @@
 
 3. Open "~/pybossa/pybossa/forms/forms.py" and add a new language settings around line 305.
     
-    if locale == 'ja':
+        if locale == 'ja':
 
-        lang = gettext("Japanese")
+            lang = gettext("Japanese")
 
 4. Open /pybossa/default_settings.py and a new language settings in LOCALES as below:
     
