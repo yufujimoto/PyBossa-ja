@@ -1,23 +1,23 @@
-# Japanese translations for Pybossa.
+# Translations template for PROJECT.
 # Copyright (C) 2015 ORGANIZATION
-# This file is distributed under the same license as the Pybossa project.
-# Yu Fujimoto <yu.fujimoto@geo-nara.net>, 2015.
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 #
-msgid "Japanese"
-msgstr "日本語"
+
+msgid ""
+msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-07-14 23:04+0900\n"
-"PO-Revision-Date: 2015-07-13 10:40+0900\n"
-"Last-Translator: Yu Fujimoto <yu.fujimoto@geo-nara.net>\n"
-"Language-Team: ja <yu.fujimoto@geo-nara.net>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"POT-Creation-Date: 2015-07-30 14:04+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 1.3\n"
+"Generated-By: Babel 2.0\n"
 
-#: core.py:408
+#: core.py:409
 msgid ""
 "Please update your e-mail address in your profile page, right now it is "
 "empty!"
@@ -30,12 +30,12 @@ msgstr "アップロードされたファイルは、同じ名前のヘッダー
 #: importers.py:102
 #, python-format
 msgid "The file you uploaded has an empty header on column %s."
-msgstr "アップロードされたファイルは、%s 列に空白のヘッダーがあります。"
+msgstr "アップロードされたファイルは%s列に空ヘッダーが含まれています。"
 
 #: importers.py:108
 #, python-format
 msgid "The file you uploaded has an extra value on row %s."
-msgstr ""
+msgstr "アップロードされたファイルは%s行に余分な値が含まれています。"
 
 #: importers.py:119
 msgid "Oops! That file doesn't look like the right file."
@@ -53,6 +53,22 @@ msgstr "複数の新しいタスクが無事にインポートされました"
 msgid "new task was imported successfully"
 msgstr "一つの新しいタスクが無事にインポートされました。"
 
+#: cache/project_stats.py:398 cache/project_stats.py:437
+msgid "Anon + Auth"
+msgstr ""
+
+#: cache/project_stats.py:399
+msgid "Completed Tasks"
+msgstr ""
+
+#: cache/project_stats.py:401 cache/project_stats.py:439
+msgid "Anonymous"
+msgstr ""
+
+#: cache/project_stats.py:402 cache/project_stats.py:440
+msgid "Authenticated"
+msgstr ""
+
 #: exporter/csv_export.py:91
 msgid ""
 "Oops, the project does not have tasks to                         export, "
@@ -65,7 +81,7 @@ msgid ""
 "                          some users to participate"
 msgstr "おっと！エクスポートできる稼働中のタスクがありません。何人かの参加者を招待してください。"
 
-#: forms/forms.py:40 forms/forms.py:358
+#: forms/forms.py:40 forms/forms.py:356
 #: themes/default/templates/stats/index.html:18
 msgid "Name"
 msgstr "名前"
@@ -86,7 +102,7 @@ msgstr "省略名は取得済みです。"
 msgid "Long Description"
 msgstr "長い説明"
 
-#: forms/forms.py:57 forms/forms.py:362
+#: forms/forms.py:57 forms/forms.py:360
 #: themes/default/templates/projects/_helpers.html:63
 #: themes/default/templates/projects/_helpers.html:131
 msgid "Description"
@@ -123,10 +139,10 @@ msgstr "パスワード（空白の場合はパスワードを設定しません
 
 #: forms/forms.py:70
 msgid "Webhook"
-msgstr "Webhook"
+msgstr ""
 
 #: forms/forms.py:80 themes/default/templates/projects/task_settings.html:36
-#: view/projects.py:1192
+#: view/projects.py:1206
 msgid "Redundancy"
 msgstr "冗長性"
 
@@ -154,7 +170,7 @@ msgstr "優先度は0.0〜1.0の値でないといけません"
 
 #: forms/forms.py:103 themes/default/templates/projects/task_scheduler.html:14
 #: themes/default/templates/projects/task_settings.html:17
-#: view/projects.py:1224
+#: view/projects.py:1238
 msgid "Task Scheduler"
 msgstr "タスク・スケジューラー"
 
@@ -252,7 +268,7 @@ msgstr "ユーザー名は取得済みです"
 msgid "User name"
 msgstr "ユーザー名"
 
-#: forms/forms.py:236 forms/forms.py:275 forms/forms.py:341
+#: forms/forms.py:236 forms/forms.py:275 forms/forms.py:339
 #, python-format
 msgid "Email must be between 3 and %s characters long"
 msgstr "Eメールは3〜%sの文字数である必要があります"
@@ -261,23 +277,23 @@ msgstr "Eメールは3〜%sの文字数である必要があります"
 msgid "Email is already taken"
 msgstr "Eメールは取得済みです"
 
-#: forms/forms.py:239 forms/forms.py:278 forms/forms.py:343
+#: forms/forms.py:239 forms/forms.py:278 forms/forms.py:341
 msgid "Email Address"
 msgstr "Eメール"
 
-#: forms/forms.py:246 forms/forms.py:316 forms/forms.py:328
+#: forms/forms.py:246 forms/forms.py:314 forms/forms.py:326
 msgid "Password cannot be empty"
 msgstr "パスワードは空白にはできません"
 
-#: forms/forms.py:247 forms/forms.py:317 forms/forms.py:329
+#: forms/forms.py:247 forms/forms.py:315 forms/forms.py:327
 msgid "Passwords must match"
 msgstr "パスワードは一致する必要があります"
 
-#: forms/forms.py:248 forms/forms.py:330
+#: forms/forms.py:248 forms/forms.py:328
 msgid "New Password"
 msgstr "新しいパスワード"
 
-#: forms/forms.py:252 forms/forms.py:333
+#: forms/forms.py:252 forms/forms.py:331
 msgid "Repeat Password"
 msgstr "パスワード再入力"
 
@@ -296,6 +312,10 @@ msgstr "表示言語"
 #: forms/forms.py:287
 msgid "CKAN API Key"
 msgstr "CKAN APIキー"
+
+#: forms/forms.py:288
+msgid "Privacy Mode"
+msgstr ""
 
 #: forms/forms.py:288
 msgid "Privacy Mode"
@@ -325,28 +345,28 @@ msgstr "イタリア語"
 msgid "Japanese"
 msgstr "日本語"
 
-#: forms/forms.py:314
+#: forms/forms.py:312
 msgid "Current password"
 msgstr "現在のパスワード"
 
-#: forms/forms.py:318
+#: forms/forms.py:316
 msgid "New password"
 msgstr "新規パスワード"
 
-#: forms/forms.py:321
+#: forms/forms.py:319
 msgid "Repeat password"
 msgstr "パスワード再入力"
 
-#: forms/forms.py:353 themes/default/templates/projects/stats.html:297
-#: themes/default/templates/projects/stats.html:298
+#: forms/forms.py:351 themes/default/templates/projects/stats.html:298
 #: themes/default/templates/projects/stats.html:299
 #: themes/default/templates/projects/stats.html:300
 #: themes/default/templates/projects/stats.html:301
-#: themes/default/templates/projects/stats.html:366
+#: themes/default/templates/projects/stats.html:302
+#: themes/default/templates/projects/stats.html:367
 msgid "User"
 msgstr "ユーザー"
 
-#: forms/forms.py:368
+#: forms/forms.py:366
 msgid "Avatar"
 msgstr "プロフィール画像"
 
@@ -384,7 +404,7 @@ msgstr "コミュニティ"
 #: themes/default/templates/base.html:78
 #: themes/default/templates/account/projects.html:13
 #: themes/default/templates/stats/global.html:89 view/account.py:367
-#: view/projects.py:164
+#: view/projects.py:165
 msgid "Projects"
 msgstr "プロジェクト"
 
@@ -687,7 +707,7 @@ msgid "You have not created a project"
 msgstr "プロジェクトが作成されていません。"
 
 #: themes/default/templates/account/projects.html:29
-#: themes/default/templates/home/index.html:37 view/projects.py:199
+#: themes/default/templates/home/index.html:37 view/projects.py:200
 msgid "Create a Project"
 msgstr "プロジェクトを作成する"
 
@@ -799,10 +819,6 @@ msgstr "プロフィールの更新"
 msgid "Upload"
 msgstr "アップロード"
 
-#: themes/default/templates/account/update.html:37
-msgid "Your profile"
-msgstr "プロフィール"
-
 #: themes/default/templates/account/update.html:47
 #: themes/default/templates/account/update.html:77
 msgid "Save the changes"
@@ -816,21 +832,92 @@ msgstr "パスワード変更"
 msgid "Save the Changes"
 msgstr "変更を保存する"
 
-#: themes/default/templates/account/update.html:73
-msgid "External Services"
-msgstr "外部サービス"
-
 #: themes/default/templates/account/update.html:85
 msgid "Do you want to reset your personal API Key?"
 msgstr "APIキーをリセットしますか？"
 
-#: themes/default/templates/account/update.html:88
-msgid "Reset"
-msgstr "リセット"
-
 #: themes/default/templates/account/update.html:89
 msgid "No, do not reset the API key!"
 msgstr "いいえ、APIキーのリセットはしません！"
+
+#: themes/default/templates/account/email/forgot_password.html:4
+msgid "Recover your lost password"
+msgstr "パスワードの再発行"
+
+#: themes/default/templates/account/email/forgot_password.html:8
+#: themes/default/templates/account/email/forgot_password_openid.html:8
+#: themes/default/templates/account/email/validate_account.html:8
+msgid "Hello"
+msgstr "ようこそ"
+
+#: themes/default/templates/account/email/forgot_password.html:14
+#: themes/default/templates/account/email/forgot_password_openid.html:13
+msgid "We received a request to recover your password for"
+msgstr "パスワード再発行のリクエストを受け取りました："
+
+#: themes/default/templates/account/email/forgot_password.html:17
+#: themes/default/templates/account/email/forgot_password_openid.html:16
+#: themes/default/templates/account/email/validate_account.html:22
+msgid "If you did not request this, please ignore this email"
+msgstr "このリクエストに心当たりが無い方は無視してください"
+
+#: themes/default/templates/account/email/forgot_password.html:20
+msgid "To recover your password, please visit the URL below"
+msgstr "パスワードを回復するためには、以下のURLにアクセスしてください"
+
+#: themes/default/templates/account/email/forgot_password.html:23
+msgid "Click here to recover your account"
+msgstr "ここをクリックしてアカウントを回復"
+
+#: themes/default/templates/account/email/forgot_password.html:26
+#: themes/default/templates/account/email/forgot_password_openid.html:22
+#: themes/default/templates/account/email/validate_account.html:31
+msgid "Regards"
+msgstr "敬具"
+
+#: themes/default/templates/account/email/forgot_password_openid.html:4
+msgid "Recover your password"
+msgstr "パスワードの復帰"
+
+#: themes/default/templates/account/email/forgot_password_openid.html:19
+msgid "Our records show that you use your"
+msgstr "私達のレコードは、"
+
+#: themes/default/templates/account/email/forgot_password_openid.html:19
+msgid ""
+"アカウントを使ってサインインしていることを示しています。同じアカウントを使用して再度サインインして下さい。"
+msgstr ""
+
+#: themes/default/templates/account/email/forgot_password_openid.html:19
+msgid "アカウントのパスワードをお忘れの方は、ご連絡下さい。"
+msgstr ""
+
+#: themes/default/templates/account/email/forgot_password_openid.html:25
+#: themes/default/templates/account/email/validate_account.html:34
+msgid "Team"
+msgstr ""
+
+#: themes/default/templates/account/email/validate_account.html:4
+msgid "Validate your account"
+msgstr "アカウントを確認しました。"
+
+#: themes/default/templates/account/email/validate_account.html:13
+msgid "Thank you for creating an account in"
+msgstr ""
+
+#: themes/default/templates/account/email/validate_account.html:16
+msgid "Just one more step!"
+msgstr "もうあと１ステップです。"
+
+#: themes/default/templates/account/email/validate_account.html:19
+msgid ""
+"To verify that you are the owner of this e-mail address, please visit the"
+" URL below"
+msgstr "Eメールの持ち主であることを確認するために、以下のURLにアクセスしてください。"
+
+#: themes/default/templates/account/email/validate_account.html:25
+msgid "Click here to confirm your e-mail address and create your account"
+msgstr "ここをクリックしてEメールアドレスを確認し、アカウント作成します。"
 
 #: themes/default/templates/admin/_helpers.html:9
 msgid "nick"
@@ -884,13 +971,9 @@ msgstr "カテゴリーの削除"
 msgid "Dashboard last 7 days"
 msgstr "過去7日間のダッシュボード"
 
-#: themes/default/templates/admin/dashboard.html:23
-msgid "Refresh"
-msgstr "更新"
-
 #: themes/default/templates/admin/dashboard.html:101
 msgid "Recent activity"
-msgstr "最近のアクティビティ"
+msgstr "最近の活動"
 
 #: themes/default/templates/admin/dashboard.html:108
 msgid "new project created"
@@ -987,7 +1070,7 @@ msgid "Manage administrators"
 msgstr "管理者の管理"
 
 #: themes/default/templates/admin/index.html:54
-#: themes/default/templates/projects/stats.html:225
+#: themes/default/templates/projects/stats.html:226
 msgid "Users"
 msgstr "ユーザー"
 
@@ -1058,9 +1141,7 @@ msgid ""
 "Unlike, say, “mechanical turk” style projects, PyBossa is not designed to"
 " handle payment or money — it is designed to support volunteer-driven "
 "projects."
-msgstr ""
-"いわゆる、「Mechanical "
-"Turk」スタイルのプロジェクトではなく、PyBossaは、金銭的報酬を伴うようには設計されていません。PyBossaは、ボランティア・ベースのプロジェクトをサポートするように設計されています。"
+msgstr "いわゆる、「Mechanical Turk」スタイルのプロジェクトではなく、PyBossaは、金銭的報酬を伴うようには設計されていません。PyBossaは、ボランティア・ベースのプロジェクトをサポートするように設計されています。"
 
 #: themes/default/templates/home/_about.html:13
 msgid ""
@@ -1158,7 +1239,7 @@ msgstr "コンピュータには出来ないことができます"
 
 #: themes/default/templates/home/index.html:18
 #: themes/default/templates/projects/_helpers.html:36
-#: themes/default/templates/projects/_helpers.html:222
+#: themes/default/templates/projects/_helpers.html:237
 msgid "Info"
 msgstr "概要"
 
@@ -1211,8 +1292,8 @@ msgstr "タスクを提出する"
 #: themes/default/templates/projects/export.html:32
 #: themes/default/templates/projects/export.html:34
 #: themes/default/templates/projects/export.html:53
-#: themes/default/templates/projects/stats.html:277
-#: themes/default/templates/projects/stats.html:367
+#: themes/default/templates/projects/stats.html:278
+#: themes/default/templates/projects/stats.html:368
 #: themes/default/templates/projects/tasks.html:13
 #: themes/default/templates/projects/tasks_browse.html:62
 msgid "Tasks"
@@ -1266,6 +1347,7 @@ msgstr "全体の進捗"
 
 #: themes/default/templates/projects/_helpers.html:66
 #: themes/default/templates/projects/_helpers.html:199
+#: themes/default/templates/projects/tasks_browse.html:19
 msgid "completed"
 msgstr "完了"
 
@@ -1297,9 +1379,21 @@ msgstr ""
 msgid "Try it!"
 msgstr "挑戦する！"
 
-#: themes/default/templates/projects/_helpers.html:201
+#: themes/default/templates/projects/_helpers.html:212
+msgid "Done! View results"
+msgstr "完了しました！結果を確認してください。"
+
+#: themes/default/templates/projects/_helpers.html:215
 msgid "Start Contributing Now!"
 msgstr "今すぐ、貢献作業を開始する！"
+
+#: themes/default/templates/projects/_helpers.html:218
+msgid "Thanks for contributing"
+msgstr "貢献していただきありがとうございます。"
+
+#: themes/default/templates/projects/_helpers.html:221
+msgid "Draft project, complete it!"
+msgstr ""
 
 #: themes/default/templates/projects/actions.html:9
 #: themes/default/templates/projects/settings.html:18
@@ -1483,11 +1577,11 @@ msgstr "この出力オプションはまだベータ版であり、CKANサー�
 
 #: themes/default/templates/projects/export.html:56
 msgid "You don't have a Datahub.io API key in your"
-msgstr "アカウントにDatahub.io API キーがありません。"
+msgstr "アカウントにDatahub.io API キーがありません"
 
 #: themes/default/templates/projects/export.html:56
 msgid "account. Please,"
-msgstr " "
+msgstr "。"
 
 #: themes/default/templates/projects/export.html:56
 msgid "create an account"
@@ -1496,27 +1590,6 @@ msgstr "アカウントを作成"
 #: themes/default/templates/projects/export.html:56
 msgid "and copy/paste the API key in your profile in order to use this exporter"
 msgstr "し、このエクスポート機能を使用するために、APIキーをプロフィールにコピー・アンド・ペーストしてください。"
-
-#: themes/default/templates/projects/index.html:21
-msgid "Order by"
-msgstr "並べ替え："
-
-#: themes/default/templates/projects/index.html:21
-#: themes/default/templates/projects/index.html:23
-msgid "name"
-msgstr "名前"
-
-#: themes/default/templates/projects/index.html:24
-msgid "date"
-msgstr "日付"
-
-#: themes/default/templates/projects/index.html:25
-msgid "activity"
-msgstr "活動"
-
-#: themes/default/templates/projects/index.html:26
-msgid "progress"
-msgstr "進捗"
 
 #: themes/default/templates/projects/index.html:35
 msgid "A special selection of the most interesting projects"
@@ -1667,53 +1740,53 @@ msgstr "1日当たりの回答"
 msgid "answers were submitted this day"
 msgstr "回答はこの日に投稿されました"
 
-#: themes/default/templates/projects/stats.html:218
+#: themes/default/templates/projects/stats.html:219
 msgid "Distribution of Answers"
 msgstr "回答の分布"
 
-#: themes/default/templates/projects/stats.html:224
+#: themes/default/templates/projects/stats.html:225
 msgid "Type"
 msgstr "タイプ"
 
-#: themes/default/templates/projects/stats.html:226
+#: themes/default/templates/projects/stats.html:227
 msgid "Percentage"
 msgstr "パーセンテージ"
 
-#: themes/default/templates/projects/stats.html:265
+#: themes/default/templates/projects/stats.html:266
 msgid "Details about Anonymous Users"
 msgstr "匿名ユーザーの詳細"
 
-#: themes/default/templates/projects/stats.html:268
+#: themes/default/templates/projects/stats.html:269
 msgid "anonymous users have"
 msgstr "人の匿名ユーザーが"
 
-#: themes/default/templates/projects/stats.html:268
-#: themes/default/templates/projects/stats.html:359
+#: themes/default/templates/projects/stats.html:269
+#: themes/default/templates/projects/stats.html:360
 msgid "participated"
 msgstr "参加しました。"
 
-#: themes/default/templates/projects/stats.html:275
+#: themes/default/templates/projects/stats.html:276
 msgid "Country"
 msgstr "国"
 
-#: themes/default/templates/projects/stats.html:276
+#: themes/default/templates/projects/stats.html:277
 msgid "City"
 msgstr "都市"
 
-#: themes/default/templates/projects/stats.html:317
+#: themes/default/templates/projects/stats.html:318
 #: themes/default/templates/stats/global.html:169
 msgid "This page includes GeoLite data created by MaxMind, available from"
 msgstr "このページは、MaxMindによって作成されたGeoLiteデータが含まれており、以下から利用することができます："
 
-#: themes/default/templates/projects/stats.html:356
+#: themes/default/templates/projects/stats.html:357
 msgid "Details about Authenticated Users"
 msgstr "登録ユーザーの詳細"
 
-#: themes/default/templates/projects/stats.html:359
+#: themes/default/templates/projects/stats.html:360
 msgid "authenticated users have"
 msgstr "人の登録ユーザーが"
 
-#: themes/default/templates/projects/stats.html:361
+#: themes/default/templates/projects/stats.html:362
 msgid "Top 5 users"
 msgstr "上位5名のユーザー"
 
@@ -1922,7 +1995,7 @@ msgstr "タスクの削除"
 
 #: themes/default/templates/projects/task_settings.html:30
 msgid "Delete all the tasks and associated answers"
-msgstr "全てのタスクおよび関連する回答の削除"
+msgstr ""
 
 #: themes/default/templates/projects/task_settings.html:35
 msgid "Change the redundancy level for the tasks"
@@ -1938,21 +2011,6 @@ msgstr "テンプレート、GDriveあるいはCSVによるタスクのインポ
 #: themes/default/templates/projects/importers/epicollect.html:25
 #: themes/default/templates/projects/importers/flickr.html:50
 #: themes/default/templates/projects/importers/gdocs.html:23
-msgid "Import"
-msgstr "インポート"
-
-#: themes/default/templates/projects/tasks.html:25
-#: themes/default/templates/projects/tasks.html:68
-msgid "Export Tasks"
-msgstr "タスクのエクスポート"
-
-#: themes/default/templates/projects/tasks.html:26
-#: themes/default/templates/projects/tasks.html:69
-msgid "Export tasks to JSON, CSV or a CKAN server"
-msgstr "JSON、CSV、CKANサーバーへのタスクのエクスポート"
-
-#: themes/default/templates/projects/tasks.html:27
-#: themes/default/templates/projects/tasks.html:70 view/projects.py:903
 msgid "Export"
 msgstr "エクスポート"
 
@@ -2031,9 +2089,7 @@ msgid "second number"
 msgstr "二つ目の数字は"
 
 #: themes/default/templates/projects/tasks_browse.html:19
-msgid ""
-"how many need to be obtained to mark the task "
-"as　<strong>completed</strong>."
+msgid "how many need to be obtained to mark the task as"
 msgstr "完了状態に必要な数字を示しています。"
 
 #: themes/default/templates/projects/tasks_browse.html:20
@@ -2551,10 +2607,10 @@ msgstr "おっと！あなたの情報が見つかりません。サインアッ
 
 #: view/account.py:117 view/account.py:216 view/account.py:491
 #: view/account.py:507 view/account.py:521 view/account.py:554
-#: view/admin.py:268 view/admin.py:349 view/projects.py:218
-#: view/projects.py:275 view/projects.py:414 view/projects.py:1211
-#: view/projects.py:1262 view/projects.py:1307 view/projects.py:1382
-#: view/projects.py:1427
+#: view/admin.py:268 view/admin.py:349 view/projects.py:219
+#: view/projects.py:276 view/projects.py:415 view/projects.py:1225
+#: view/projects.py:1276 view/projects.py:1321 view/projects.py:1396
+#: view/projects.py:1441
 msgid "Please correct the errors"
 msgstr "エラーを修正してください。"
 
@@ -2658,131 +2714,137 @@ msgstr "カテゴリーが更新されました"
 msgid "Dashboard jobs enqueued, refresh page in a few minutes"
 msgstr "ダッシュボードのジョブは待機状態です。更新まで数分お待ちください。"
 
-#: view/projects.py:234
+#: view/projects.py:235
 msgid "Project created!"
 msgstr "プロジェクトが作成されました。"
 
-#: view/projects.py:237
+#: view/projects.py:238
 msgid "You can check the "
-msgstr ""
+msgstr "確認は、"
 
-#: view/projects.py:239
+#: view/projects.py:240
 msgid "Guide and Documentation"
-msgstr ""
+msgstr "ガイドと解説書"
 
-#: view/projects.py:241
+#: view/projects.py:242
 msgid "for adding tasks, a thumbnail, using PyBossa.JS, etc."
-msgstr ""
+msgstr "がありますので、タスク、サムネイル、PyBossa.JSの使い方等はそちらをご覧ください。"
 
-#: view/projects.py:269
+#: view/projects.py:270
 msgid "Task presenter added!"
 msgstr "タスク表示が追加されました！"
 
-#: view/projects.py:282
+#: view/projects.py:283
 msgid "<strong>Note</strong> You will need to upload the tasks using the"
-msgstr ""
-
-#: view/projects.py:284
-msgid "CSV importer"
-msgstr ""
+msgstr "<strong>注意：</strong> タスクをアップロードするには、"
 
 #: view/projects.py:285
+msgid "CSV importer"
+msgstr "CSVインポートを使用してください。"
+
+#: view/projects.py:286
 msgid ""
 " or download the project bundle and run the "
 "<strong>createTasks.py</strong> script in your computer"
 msgstr ""
 
-#: view/projects.py:351
+#: view/projects.py:352
 msgid "Project deleted!"
 msgstr "プロジェクトは削除されました"
 
-#: view/projects.py:388
+#: view/projects.py:389
 msgid "Project updated!"
 msgstr "プロジェクトは更新されました"
 
-#: view/projects.py:433
+#: view/projects.py:434
 msgid ""
 "Your project thumbnail has been updated! It may"
 "                                   take some minutes to refresh..."
 msgstr "あなたのプロジェクト・サムネイルは更新されました。再更新されるまでしばらくお待ちください。"
 
-#: view/projects.py:436
+#: view/projects.py:437
 msgid "You must provide a file to change the avatar"
 msgstr "プロフィール画像を変更するためのファイルが必要です"
 
-#: view/projects.py:514
+#: view/projects.py:515
 msgid "Importing tasks, this may take a while, wait..."
 msgstr "タスクをインポート中です。しばらく時間がかかるかもしれません。お待ちください。"
 
-#: view/projects.py:572
+#: view/projects.py:573
 msgid ""
 "You're trying to import a large amount of tasks, so please be patient."
 "            You will receive an email when the tasks are ready."
 msgstr "大量のタスクをインポートしようとしています。しばらくお待ち下さい。作業準備が整った段階でメールをお送りします。"
 
-#: view/projects.py:615
+#: view/projects.py:616
 msgid "Success! Tasks will be imported daily."
 msgstr "成功です！タスクは日毎にインポートされました。"
 
-#: view/projects.py:669
+#: view/projects.py:670
 msgid "Sorry, incorrect password"
 msgstr "申し訳ございませんが、パスワードが間違っているようです。"
 
-#: view/projects.py:699
+#: view/projects.py:700
 msgid ""
 "Ooops! You are an anonymous user and will not get any credit for your "
 "contributions."
 msgstr "おっと！あなたは匿名ユーザーであるので、貢献結果はいかなる功績も記録として残りません。"
 
-#: view/projects.py:891
+#: view/projects.py:719 view/projects.py:771
+msgid ""
+"Sorry, but this project is still a draft and does not have a task "
+"presenter."
+msgstr ""
+
+#: view/projects.py:899
 msgid "All the tasks and associated task runs have been deleted"
 msgstr "稼働中の全てのタスクおよび関連するタスクは削除されました。"
 
-#: view/projects.py:904
+#: view/projects.py:912
 msgid "Exporting data..., this may take a while"
 msgstr "データをエクスポートしています…。この作業には時間がかかる場合があります。"
 
-#: view/projects.py:997
+#: view/projects.py:1005
 msgid "Data exported to "
 msgstr "データは次の場所にエクスポートされました："
 
-#: view/projects.py:1055
+#: view/projects.py:1063
 msgid ""
 "Oops, the project does not have tasks to                     export, if "
 "you are the owner add some tasks"
 msgstr "おっと！そのプロジェクトはエクスポートするべきタスクが無いようです。オーナーは、いくつかのタスクを追加してください。"
 
-#: view/projects.py:1061
+#: view/projects.py:1069
 msgid ""
 "Oops, there are no Task Runs yet to export, invite                      "
 "some users to participate"
 msgstr "おっと！エクスポートするべき稼働中のタスクがありません。何人かの参加者を招待してください。"
 
-#: view/projects.py:1207
+#: view/projects.py:1221
+msgid "Redundancy of Tasks updated!"
+msgstr ""
+
+#: view/projects.py:1271
 msgid "Redundancy of Tasks updated!"
 msgstr "タスクの冗長性が更新されました！"
 
-#: view/projects.py:1257
+#: view/projects.py:1318
 msgid "Project Task Scheduler updated!"
 msgstr "プロジェクト・タスク・スケジューラーが更新されました！"
 
-#: view/projects.py:1304
-msgid "Task priority has been changed"
-msgstr "タスクの優先順位が変更されました"
-
-#: view/projects.py:1361
+#: view/projects.py:1375
 msgid "Write a new post"
 msgstr "新しい投稿を執筆する"
 
-#: view/projects.py:1393
+#: view/projects.py:1407
 msgid "Blog post created!"
 msgstr "ブロク投稿が作成されました！"
 
-#: view/projects.py:1411
+#: view/projects.py:1425
 msgid "Edit a post"
 msgstr "投稿の編集"
 
-#: view/projects.py:1439
+#: view/projects.py:1453
 msgid "Blog post updated!"
 msgstr "ブログ投稿は更新されました。"
 
