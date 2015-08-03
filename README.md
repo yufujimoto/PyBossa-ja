@@ -2,15 +2,6 @@
 
 [PyBossa](http://pybossa.com/) is an open source platform for crowd-sourcing, and this repository provides a set of Japanese translation files. Please see [PyBossa's documentation](http://docs.pybossa.com/en/latest/install.html) if you haven't **installed by hand**. 
 
-1. Replace some files located in "~/pybossa/pybossa/themes/default/templates" with following files.
-
-    + account/update.html
-    + admin/dashboard.html
-    + projects/delete.html
-    + projects/index.html
-    + projects/task_import_options.html
-    + projects/tasks_browse.html
-
 2. Create a symlink to the translation directory to enable translation file. 
 
         cd ~/pybossa/pybossa && ln -s themes/defaul/translations
@@ -35,7 +26,7 @@
 
 7. Replace **messages.pot** file located in "~/pybossa/pybossa/translations/".
 
-    You can edit/modify the **messages.pot** file if you need.
+    You can edit/modify the **messages.pot** file if you need. 
 
 8. Activate virtualenv if you need.
 
